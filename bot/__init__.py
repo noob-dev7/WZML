@@ -742,7 +742,7 @@ if ospath.exists('buttons.txt'):
                 extra_buttons[temp[0]] = temp[1]
 
 if ospath.exists('shorteners.txt'):
-    with open('gplinks.com 8101eea7e1b0334ad076cf0bb048629c6737ff4e', 'r+') as f:
+    with open('shorteners.txt', 'r+') as f:
         lines = f.readlines()
         for line in lines:
             temp = line.strip().split()
