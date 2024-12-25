@@ -747,7 +747,7 @@ if ospath.exists('shorteners.txt'):
         for line in lines:
             temp = line.strip().split()
             if len(temp) == 2:
-                shorteners_list.append({'domain': temp[0],'api_key': temp[1]})
+                shorteners_list.append({'gplinks.com': temp[0],'8101eea7e1b0334ad076cf0bb048629c6737ff4e': temp[1]})
 
 if BASE_URL:
     Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{BASE_URL_PORT} --worker-class gevent", shell=True)
